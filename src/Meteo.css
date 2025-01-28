@@ -1,0 +1,61 @@
+.Meteo {
+  border: 2px solid #fdc166bb;
+  border-radius: 10px;
+  background: #fff;
+  box-shadow: 5px 5px 8px rgba(0, 0, 0, 0.136);
+  padding: 30px 0;
+  margin: 50px auto 30px;
+}
+
+.Meteo .meteo-info {
+  padding: 20px 60px;
+}
+
+.Meteo form {
+  text-align: center;
+}
+
+.Meteo .input-formulario {
+  border: 1px solid #fdc166bb;
+  border-radius: 5px;
+  padding: 8px 20px;
+  margin-right: 5px;
+  color: rgba(70, 70, 70, 0.231);
+}
+
+.Meteo .bottone-cerca {
+  background: #fdc166bb;
+  border: 1px solid #fdc166bb;
+  border-radius: 5px;
+  padding: 8px 20px;
+}
+
+.Meteo h1 {
+  background: #fdc166bb;
+  padding: 10px 40px;
+  font-size: 30px;
+  margin: 30px 0;
+}
+
+.Meteo .info-generali {
+  list-style: none;
+  padding: 0;
+  font-size: 20px;
+}
+
+.Meteo img {
+  position: relative;
+  top: -15px;
+}
+
+.Meteo .temperatura {
+  font-size: 60px;
+  margin-left: 10px;
+}
+
+.Meteo .unita {
+  font-size: 20px;
+  position: relative;
+  left: -5px;
+  top: -30px;
+}
