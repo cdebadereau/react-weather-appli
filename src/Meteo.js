@@ -32,10 +32,17 @@ export default function Meteo() {
             <span className="unita">°C | °F</span>
           </div>
         </div>
-        <ul>
-          <li>Precipitazioni: 70% </li>
-          <li>Umidità: 80%</li>
-          <li>Venti: 30km/h</li>
+        <ul className="dati-meteo d-flex flex-row justify-content-around">
+          <div>
+            <li>Precipitazioni</li>
+            <li>Umidità</li>
+            <li>Venti</li>
+          </div>
+          <div>
+            <li>70%</li>
+            <li>80%</li>
+            <li>30km/h</li>
+          </div>
         </ul>
       </div>
     </div>

@@ -1,10 +1,10 @@
 .Meteo {
-  border: 2px solid #fdc166bb;
+  border: 2px solid #000;
   border-radius: 10px;
   background: #fff;
   box-shadow: 5px 5px 8px rgba(0, 0, 0, 0.136);
-  padding: 30px 0;
-  margin: 50px auto 30px;
+  padding-top: 30px;
+  margin: 50px auto 0px;
 }
 
 .Meteo .meteo-info {
@@ -26,6 +26,14 @@
 .Meteo .bottone-cerca {
   background: #fdc166bb;
   border: 1px solid #fdc166bb;
+  border-radius: 5px;
+  padding: 8px 20px;
+  transition: all 250ms ease-in-out;
+}
+
+.Meteo .bottone-cerca:hover {
+  background: #e4a23f;
+  border: 1px solid #e4a23f;
   border-radius: 5px;
   padding: 8px 20px;
 }
@@ -58,4 +66,13 @@
   position: relative;
   left: -5px;
   top: -30px;
+}
+
+.Meteo .dati-meteo {
+  list-style: none;
+  padding: 20px 80px;
+  margin-top: 20px;
+  border: 1px solid #fdc16678;
+  border-radius: 10px;
+  background: #fdc16678;
 }
