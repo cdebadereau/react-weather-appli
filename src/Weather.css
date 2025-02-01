@@ -1,4 +1,4 @@
-.Meteo {
+.Weather {
   border: 2px solid #000;
   border-radius: 10px;
   background: #fff;
@@ -7,15 +7,15 @@
   margin: 50px auto 0px;
 }
 
-.Meteo .meteo-info {
+.Weather .weather-info {
   padding: 20px 60px;
 }
 
-.Meteo form {
+.Weather form {
   text-align: center;
 }
 
-.Meteo .input-formulario {
+.Weather .form-input {
   border: 1px solid #fdc166bb;
   border-radius: 5px;
   padding: 8px 20px;
@@ -23,7 +23,7 @@
   color: rgba(70, 70, 70, 0.231);
 }
 
-.Meteo .bottone-cerca {
+.Weather .search-button {
   background: #fdc166bb;
   border: 1px solid #fdc166bb;
   border-radius: 5px;
@@ -31,44 +31,44 @@
   transition: all 250ms ease-in-out;
 }
 
-.Meteo .bottone-cerca:hover {
+.Weather .search-button:hover {
   background: #e4a23f;
   border: 1px solid #e4a23f;
   border-radius: 5px;
   padding: 8px 20px;
 }
 
-.Meteo h1 {
+.Weather h1 {
   background: #fdc166bb;
   padding: 10px 40px;
   font-size: 30px;
   margin: 30px 0;
 }
 
-.Meteo .info-generali {
+.Weather .general-info {
   list-style: none;
   padding: 0;
   font-size: 20px;
 }
 
-.Meteo img {
+.Weather img {
   position: relative;
   top: -15px;
 }
 
-.Meteo .temperatura {
+.Weather .temperature {
   font-size: 60px;
   margin-left: 10px;
 }
 
-.Meteo .unita {
+.Weather .unit {
   font-size: 20px;
   position: relative;
   left: -5px;
   top: -30px;
 }
 
-.Meteo .dati-meteo {
+.Weather .weather-data {
   list-style: none;
   padding: 20px 80px;
   margin-top: 20px;

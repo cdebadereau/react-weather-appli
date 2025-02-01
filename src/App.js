@@ -1,15 +1,15 @@
 import React from "react";
-import Meteo from "./Meteo";
+import Weather from "./Weather";
 import "./App.css";
 
 export default function App() {
   return (
     <div className="App">
       <div className="container">
-        <Meteo defaultCity="London" />
+        <Weather defaultCity="Florence" />
         <small>
-          Questo progetto è stato sviluppato da Cyrielle de Badereau de Saint
-          Martin ed è disponibile su{" "}
+          This project was coded by Cyrielle de Badereau de Saint Martin and is
+          open-sourced on{" "}
           <a
             href="https://github.com/cdebadereau/react-weather-appli"
             target="_blank"
