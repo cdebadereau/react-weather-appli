@@ -6,7 +6,7 @@ export default function App() {
   return (
     <div className="App">
       <div className="container">
-        <Meteo />
+        <Meteo defaultCity="London" />
         <small>
           Questo progetto è stato sviluppato da Cyrielle de Badereau de Saint
           Martin ed è disponibile su{" "}
