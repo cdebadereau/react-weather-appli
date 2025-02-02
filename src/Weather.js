@@ -1,13 +1,14 @@
 import React, { useState } from "react";
 import axios from "axios";
 import MoonLoader from "react-spinners/MoonLoader";
-import FormattedDate from "./FormattedDate";
+import WeatherInfo from "./WeatherInfo";
 import "./MoonLoader.css";
 
 import "./Weather.css";
 
 export default function Weather(props) {
   const [weatherData, setWeatherData] = useState({ ready: false });
+  const [city, setCity] = useState(props.defaultCity);
 
   function displayTemperature(response) {
     setWeatherData({
@@ -23,57 +24,39 @@ export default function Weather(props) {
     });
   }
 
+  function search() {
+    let apiKey = "96668c3bo8171924ab023b1atd05c04f";
+    let apiUrl = `https://api.shecodes.io/weather/v1/current?query=${city}&key=${apiKey}`;
+    axios.get(apiUrl).then(displayTemperature);
+  }
+
+  function handleSubmit(event) {
+    event.preventDefault();
+    search();
+  }
+
+  function updateCity(event) {
+    setCity(event.target.value);
+  }
+
   if (weatherData.ready) {
     return (
       <div className="Weather">
-        <form>
+        <form onSubmit={handleSubmit}>
           <input
             type="search"
             placeholder="Enter a city"
             className="form-input w-50"
             autoFocus="on"
+            onChange={updateCity}
           />
           <input type="submit" value="Search" className="search-button" />
         </form>
-
-        <h1>{weatherData.name}</h1>
-        <div className="weather-info">
-          <div className="row">
-            <div className="col-7">
-              <ul className="general-info">
-                <li>
-                  <FormattedDate data={weatherData.date} />
-                </li>
-                <li className="text-capitalize">{weatherData.description}</li>
-              </ul>
-            </div>
-            <div className="col-5">
-              <img src={weatherData.icon} alt={weatherData.description} />
-              <span className="temperature">
-                {Math.round(weatherData.temperature)}
-              </span>{" "}
-              <span className="unit">°C | °F</span>
-            </div>
-          </div>
-          <ul className="weather-data d-flex flex-row justify-content-around">
-            <div>
-              <li>Humidity</li>
-              <li>Wind</li>
-              <li>Pressure</li>
-            </div>
-            <div>
-              <li>{weatherData.humidity} %</li>
-              <li>{weatherData.wind} km/h</li>
-              <li>{weatherData.pressure} mbar</li>
-            </div>
-          </ul>
-        </div>
+        <WeatherInfo data={weatherData} />
       </div>
     );
   } else {
-    let apiKey = "96668c3bo8171924ab023b1atd05c04f";
-    let apiUrl = `https://api.shecodes.io/weather/v1/current?query=${props.defaultCity}&key=${apiKey}`;
-    axios.get(apiUrl).then(displayTemperature);
+    search();
     return <MoonLoader color="#f4b700" loading size={80} speedMultiplier={1} />;
   }
 }
