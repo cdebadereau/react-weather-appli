@@ -51,9 +51,9 @@
   font-size: 20px;
 }
 
-.Weather img {
-  position: relative;
-  top: -15px;
+.Weather canvas {
+  /*position: relative;*/
+  margin-right: 15px;
 }
 
 .Weather .temperature {
@@ -64,8 +64,7 @@
 .Weather .unit {
   font-size: 20px;
   position: relative;
-  left: -5px;
-  top: -30px;
+  top: -28px;
 }
 
 .Weather .weather-data {

@@ -9,9 +9,11 @@
     "bootstrap": "^5.3.3",
     "cra-template": "1.2.0",
     "react": "^19.0.0",
+    "react-animated-weather": "^4.0.1",
     "react-dom": "^19.0.0",
     "react-scripts": "^3.0.1",
     "react-spinners": "^0.15.0",
+    "svelte-weather": "^1.0.2",
     "web-vitals": "^4.2.4"
   },
   "scripts": {
