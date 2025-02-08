@@ -52,7 +52,7 @@
 }
 
 .Weather canvas {
-  /*position: relative;*/
+  position: relative;
   margin-right: 15px;
 }
 
