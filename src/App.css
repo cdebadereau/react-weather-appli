@@ -5,5 +5,8 @@
 
 .App small {
   font-size: 13px;
+  display: block;
   text-align: center;
+  margin-top: 15px;
+  color: rgba(0, 0, 0, 0.71);
 }

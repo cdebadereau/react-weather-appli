@@ -57,6 +57,10 @@ export default function Weather(props) {
     );
   } else {
     search();
-    return <MoonLoader color="#f4b700" loading size={80} speedMultiplier={1} />;
+    return (
+      <div className="loader-container">
+        <MoonLoader color="#f4b700" loading size={80} speedMultiplier={1} />
+      </div>
+    );
   }
 }

@@ -1,5 +1,6 @@
-.MoonLoader {
-  display: block;
-  margin: 50px auto;
-  padding: 0 auto;
+.loader-container {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  margin: 200px auto;
 }
