@@ -21,7 +21,6 @@ export default function WeatherIcon(props) {
     "snow-night": "SNOW",
     "mist-day": "WIND",
     "mist-night": "WIND",
-    "scattered-clouds-day": "FOG",
   };
   console.log(props.code);
   return (
