@@ -2,8 +2,9 @@ import React, { useState } from "react";
 import axios from "axios";
 import MoonLoader from "react-spinners/MoonLoader";
 import WeatherInfo from "./WeatherInfo";
-import "./MoonLoader.css";
+import WeatherForecast from "./WeatherForecast";
 
+import "./MoonLoader.css";
 import "./Weather.css";
 
 export default function Weather(props) {
@@ -53,6 +54,7 @@ export default function Weather(props) {
           <input type="submit" value="Search" className="search-button" />
         </form>
         <WeatherInfo data={weatherData} />
+        <WeatherForecast />
       </div>
     );
   } else {

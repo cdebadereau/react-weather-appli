@@ -1,0 +1,16 @@
+.WeatherForecast {
+  text-align: center;
+}
+
+.WeatherForecast .forecast-day-container {
+  border: 1px solid var(--primary-color);
+  border-radius: 10px;
+  padding: 10px 25px;
+  margin: 10px;
+  max-width: 125px;
+}
+
+.WeatherForecast .forecast-temperature-min {
+  opacity: 0.6;
+  margin-left: 5px;
+}
