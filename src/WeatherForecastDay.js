@@ -35,3 +35,5 @@ export default function WeatherForecastDay(props) {
 //2. The response of the API call is no longer in the forecast state, but in the props.data (data is the props given to the component in WeatherForecast.js) DON'T FORGET TO IMPORT ALSO THE WEATHERICON COMPONENT IN THIS NEW COMPONENT. Change every data with props.data
 //3. Create a new function for each temperature to rounded it and call the fonction inside the UI
 //4. Create a new function to take care of the date and indicate the days
+
+//5. React loop using a map to duplicate the forecast for each day in WeatherForecast.js
