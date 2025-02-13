@@ -1,5 +1,4 @@
 export default function FormattedDate(props) {
-  console.log(props.data);
   let days = [
     "Sunday",
     "Monday",

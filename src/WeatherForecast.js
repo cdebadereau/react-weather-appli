@@ -14,7 +14,6 @@ export default function WeatherForecast(props) {
   }, [props.city]);
 
   function handleResponse(response) {
-    console.log(response.data.daily);
     setForecast(response.data.daily);
     setLoaded(true);
   }
@@ -24,17 +23,18 @@ export default function WeatherForecast(props) {
       <div className="WeatherForecast">
         <div className="row">
           {forecast.map(function (dailyForecast, index) {
-            if (index < 5) {
+            if (index < 6) {
               //Because the index is showing the forecast for 7 days, we ask to display only 5 days
               return (
-                <div className="col" key={index}>
+                <div className="col-sm-4" key={index}>
                   <div className="forecast-day-container">
                     <WeatherForecastDay data={dailyForecast} />
                   </div>
                 </div>
               );
+            } else {
+              return null;
             }
-            return null;
           })}
         </div>
       </div>
